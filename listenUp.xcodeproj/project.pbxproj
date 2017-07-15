@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		485807721EE41DB70069C3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807711EE41DB70069C3D2 /* AppDelegate.swift */; };
-		485807741EE41DB70069C3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807731EE41DB70069C3D2 /* ViewController.swift */; };
 		485807771EE41DB70069C3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485807751EE41DB70069C3D2 /* Main.storyboard */; };
 		4858077A1EE41DB70069C3D2 /* listenUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 485807781EE41DB70069C3D2 /* listenUp.xcdatamodeld */; };
 		4858077C1EE41DB70069C3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4858077B1EE41DB70069C3D2 /* Assets.xcassets */; };
 		4858077F1EE41DB70069C3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4858077D1EE41DB70069C3D2 /* LaunchScreen.storyboard */; };
 		4858078A1EE41DB70069C3D2 /* listenUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807891EE41DB70069C3D2 /* listenUpTests.swift */; };
 		485807951EE41DB70069C3D2 /* listenUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807941EE41DB70069C3D2 /* listenUpUITests.swift */; };
+		485807AD1EE448AA0069C3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807AC1EE448AA0069C3D2 /* ViewController.swift */; };
+		485807AF1EE48D890069C3D2 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807AE1EE48D890069C3D2 /* Song.swift */; };
+		485807B21EE4A7DB0069C3D2 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807B11EE4A7DB0069C3D2 /* SongCell.swift */; };
+		485807B41EE5608C0069C3D2 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485807B31EE5608C0069C3D2 /* PlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		4858076E1EE41DB70069C3D2 /* listenUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listenUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485807711EE41DB70069C3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		485807731EE41DB70069C3D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		485807761EE41DB70069C3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		485807791EE41DB70069C3D2 /* listenUp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = listenUp.xcdatamodel; sourceTree = "<group>"; };
 		4858077B1EE41DB70069C3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		485807901EE41DB70069C3D2 /* listenUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listenUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		485807941EE41DB70069C3D2 /* listenUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listenUpUITests.swift; sourceTree = "<group>"; };
 		485807961EE41DB70069C3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		485807AC1EE448AA0069C3D2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		485807AE1EE48D890069C3D2 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		485807B11EE4A7DB0069C3D2 /* SongCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		485807B31EE5608C0069C3D2 /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,10 @@
 		485807701EE41DB70069C3D2 /* listenUp */ = {
 			isa = PBXGroup;
 			children = (
+				485807B01EE48D930069C3D2 /* entity */,
+				485807AC1EE448AA0069C3D2 /* ViewController.swift */,
 				485807711EE41DB70069C3D2 /* AppDelegate.swift */,
-				485807731EE41DB70069C3D2 /* ViewController.swift */,
+				485807B31EE5608C0069C3D2 /* PlayViewController.swift */,
 				485807751EE41DB70069C3D2 /* Main.storyboard */,
 				4858077B1EE41DB70069C3D2 /* Assets.xcassets */,
 				4858077D1EE41DB70069C3D2 /* LaunchScreen.storyboard */,
@@ -126,6 +134,15 @@
 				485807961EE41DB70069C3D2 /* Info.plist */,
 			);
 			path = listenUpUITests;
+			sourceTree = "<group>";
+		};
+		485807B01EE48D930069C3D2 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				485807AE1EE48D890069C3D2 /* Song.swift */,
+				485807B11EE4A7DB0069C3D2 /* SongCell.swift */,
+			);
+			name = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485807741EE41DB70069C3D2 /* ViewController.swift in Sources */,
+				485807AF1EE48D890069C3D2 /* Song.swift in Sources */,
+				485807AD1EE448AA0069C3D2 /* ViewController.swift in Sources */,
 				4858077A1EE41DB70069C3D2 /* listenUp.xcdatamodeld in Sources */,
+				485807B21EE4A7DB0069C3D2 /* SongCell.swift in Sources */,
+				485807B41EE5608C0069C3D2 /* PlayViewController.swift in Sources */,
 				485807721EE41DB70069C3D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +540,7 @@
 				4858079B1EE41DB70069C3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4858079C1EE41DB70069C3D2 /* Build configuration list for PBXNativeTarget "listenUpTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +549,7 @@
 				4858079E1EE41DB70069C3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4858079F1EE41DB70069C3D2 /* Build configuration list for PBXNativeTarget "listenUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +558,7 @@
 				485807A11EE41DB70069C3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
